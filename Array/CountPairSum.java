@@ -9,7 +9,7 @@ class Pair {
                 }
             }
         }
-        System.out.print(" Total pairs are:- " + count);
+        System.out.print("Total pairs are:- " + count);
     }
 }
 
