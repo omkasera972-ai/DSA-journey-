@@ -5,7 +5,7 @@ class Unions {
         int left = 0, right = 0;
 
         // Union
-        List<Integer> res = new ArrayList();
+        List<Integer> res = new ArrayList<>();
 
         while (left < arr1.length || right < arr2.length) {
 
