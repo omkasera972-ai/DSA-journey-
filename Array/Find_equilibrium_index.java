@@ -1,3 +1,5 @@
+package Array;
+
 class Equilibrium {
     static void eq(int arr[]) {
 
