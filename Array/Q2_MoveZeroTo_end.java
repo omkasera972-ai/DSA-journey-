@@ -2,7 +2,7 @@ import static java.lang.IO.print;
 
 @FunctionalInterface
 interface Zero {
-    void zero(int arr[]);
+    void zero(int[] arr);
 }
 
 Zero obj = (arr) -> {
@@ -22,7 +22,7 @@ Zero obj = (arr) -> {
 
 
 void main() {
-        int arr[] = { 1, 0, 3, 0, 5, 0, 9 };
+        int[] arr = { 1, 0, 3, 0, 5, 0, 9 };
 
         obj.zero(arr);
 
