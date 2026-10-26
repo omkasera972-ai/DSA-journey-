@@ -1,7 +1,5 @@
 package Linkedlist;
 
-// Add two numbers represented by linked lists:=
-
 public class Reverse2Linkedlist {
     static class ListNode {
         int data;
