@@ -31,3 +31,33 @@ void main() {
         }
     }
 
+    // More easy Approach:=
+    /*
+    public class Move0ToEnd {
+
+    static void getMove(int arr[]) {
+        int index = 0;
+
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] != 0) {
+                int temp = arr[i];
+                arr[i] = arr[index];
+                arr[index] = temp;
+
+                index++;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int arr[] = {1,0,2,0,6,0,0};
+
+        getMove(arr);
+
+        for(int i = 0; i < arr.length; i++) {
+            IO.print(arr[i] + " ");
+        }
+    }
+}
+
+     */
+
