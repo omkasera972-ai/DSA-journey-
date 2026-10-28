@@ -18,6 +18,7 @@ public class LongestSubString {
 
             int length = end - start + 1;
 
+
             if(length > max) {
                 max = length;
             }
