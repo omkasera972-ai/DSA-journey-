@@ -1,39 +1,27 @@
 package String;
 
-class SubString {
-    static void subString(String s) {
-        boolean[] seen = new boolean[256];
-
-        int left = 0;
-        int right = 0;
-        int max = 0;
-
-        while (right < s.length()) {
-
-            char ch = s.charAt(right);
-
-            if (!seen[ch]) {
-                seen[ch] = true;
-                right++;
-
-                max = Math.max(max, right - left);
-
-            } else {
-                seen[s.charAt(left)] = false;
-                left++;
-            }
-        }
-
-        System.out.println(max);
-    }
-}
-
 public class LongestSubString {
     public static void main(String[] args) {
+        int arr[] = new int[ 256];
+        String s = "abcdab";
+        int start = 0;
+        int max = 0;
 
-        String s = "abcabcbb";
+        for(int end = 0; end < s.length(); end++) {
+            char ch = s.charAt(end);
 
-        SubString.subString(s);
+            while(arr[ch] == 1) {
+                arr[s.charAt(start)] = 0;
+                start++;
+            }
+            arr[ch] = 1;
 
+            int length = end - start + 1;
+
+            if(length > max) {
+                max = length;
+            }
+        }
+        System.out.println(max);
     }
 }
