@@ -1,6 +1,6 @@
 package Linkedlist;
 
-public class AddTwoNumbers {
+public class Q2_AddTwoNumbers {
 
     static class ListNode {
         int data;

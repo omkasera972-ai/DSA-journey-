@@ -1,6 +1,6 @@
 package Linkedlist;
 
-public class RotateLinkedList {
+public class Q3_RotateLinkedList {
 
     static class ListNode{
         int data;

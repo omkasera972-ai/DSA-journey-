@@ -1,6 +1,6 @@
 package Linkedlist;
 
-public class Intersect2Linkedlist {
+public class Q1_Intersect2Linkedlist {
     static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
         if(headA == null || headB == null) {
