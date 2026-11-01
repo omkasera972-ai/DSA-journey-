@@ -11,6 +11,7 @@ public class RabinKarp {
         int base = 256;
         int mod = 101;
 
+
         int patternHash = 0;
         int windowHash = 0;
         int h = 1;
