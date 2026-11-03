@@ -14,3 +14,17 @@ void main() {
     System.out.println(b);
     System.out.println(temp);
 }
+
+/*
+~~~~~~~~~ Output ~~~~~~~~~~
+
+10
+10
+20
+20
+10
+10
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ */
