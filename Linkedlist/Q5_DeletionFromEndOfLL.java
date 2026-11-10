@@ -1,7 +1,7 @@
 
 package Linkedlist;
 
-public class DeletionFromEndOfLL {
+public class Q5_DeletionFromEndOfLL {
 
     static class ListNode {
         int data;
