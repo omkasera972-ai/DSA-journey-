@@ -14,6 +14,9 @@ public class DeletionFromEndOfLL {
     }
 
     static ListNode deleteNode(ListNode head, int k) {
+        if(head == null || k < 0) {
+            return head;
+        }
         int length = 0;
         ListNode temp = head;
 
@@ -30,7 +33,7 @@ public class DeletionFromEndOfLL {
             return head.next;
         }
 
-        ListNode temp = head;
+        temp = head;
 
         // Reach previous node
         for (int i = 1; i < k - 1; i++) {
