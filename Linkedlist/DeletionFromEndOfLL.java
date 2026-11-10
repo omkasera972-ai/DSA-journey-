@@ -25,6 +25,10 @@ public class DeletionFromEndOfLL {
             temp = temp.next;
         }
 
+        if(k > length) {
+            return head;
+        }
+
         // Step 2: Convert end position into starting position
         k = length - k + 1;
 
