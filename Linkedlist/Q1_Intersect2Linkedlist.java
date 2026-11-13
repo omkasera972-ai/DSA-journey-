@@ -76,7 +76,7 @@ public class Q1_Intersect2Linkedlist {
         if(result != null) {
             System.out.println("Intersection point:- " + result.data);
         } else {
-            System.out.println("No Intersection point!!");
+            System.out.println("No Intersection point");
         }
     }
 }
