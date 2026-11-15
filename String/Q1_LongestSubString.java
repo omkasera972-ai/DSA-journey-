@@ -1,11 +1,12 @@
 package String;
 
-public class LongestSubString {
+public class Q1_LongestSubString {
     public static void main(String[] args) {
         int arr[] = new int[ 256];
         String s = "abcdab";
         int start = 0;
         int max = 0;
+
 
         for(int end = 0; end < s.length(); end++) {
             char ch = s.charAt(end);
