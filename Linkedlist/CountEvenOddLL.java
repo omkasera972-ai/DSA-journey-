@@ -28,7 +28,7 @@ public class CountEvenOddLL {
             temp = temp.next;
         }
 
-        System.out.println("Even count: " + even);
+        IO.println("Even count: " + even);
         System.out.println("Odd count: " + odd);
     }
 
