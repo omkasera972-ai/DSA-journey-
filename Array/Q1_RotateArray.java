@@ -1,11 +1,6 @@
 import static java.lang.IO.print;
 
-@FunctionalInterface
-interface Rotate {
-    void rotate(int arr[], int start, int end);
-}
-
-Rotate obj = (arr,start,end) -> {
+void reverse(int arr[], int start, int end) {
 
     while (start < end) {
 
@@ -16,18 +11,29 @@ Rotate obj = (arr,start,end) -> {
         start++;
         end--;
     }
-};
+}
 
 void main() {
+
     int arr[] = {1,2,3,4,5,6,7};
     int n = arr.length;
-    int k = 3;
+    int k = 2;
 
-    obj.rotate(arr,0,n-1);
-    obj.rotate(arr,0,k-1);
-    obj.rotate(arr,k,n-1);
+    IO.println("Before Rotate:-");
 
-    for(int i = 0; i < arr.length; i++) {
+    for(int num : arr) {
+        IO.print(num + " ");
+    }
+
+
+    reverse(arr, 0, n - 1);
+    reverse(arr, 0, k - 1);
+    reverse(arr, k, n - 1);
+
+    IO.println();
+
+    IO.println("\nAfter Rotate:- ");
+    for (int i = 0; i < arr.length; i++) {
         print(arr[i] + " ");
     }
 }
